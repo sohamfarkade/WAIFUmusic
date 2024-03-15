@@ -1,5 +1,5 @@
 from Wifemusic.core.bot import Wife
-from wifemusic.core.dir import dirr
+from Wifemusic.core.dir import dirr
 from Wifemusic.core.git import git
 from Wifemusic.core.userbot import Userbot
 from Wifemusic.misc import dbb, heroku
