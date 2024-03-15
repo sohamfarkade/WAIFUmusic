@@ -1,4 +1,4 @@
-from Wifemusic.core.bot import Anony
+from Wifemusic.core.bot import Wife
 from wifemusic.core.dir import dirr
 from Wifemusic.core.git import git
 from Wifemusic.core.userbot import Userbot
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Anony()
+app = Wife()
 userbot = Userbot()
 
 
