@@ -1,4 +1,4 @@
-from Wifemusic.core.bot import Wife
+from Wifemusic.core.bot import Anony
 from Wifemusic.core.dir import dirr
 from Wifemusic.core.git import git
 from Wifemusic.core.userbot import Userbot
