@@ -7,11 +7,11 @@ from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
 from AnonXMusic import app
-from AnonXMusic.misc import db
-from AnonXMusic.utils import AnonyBin, get_channeplayCB, seconds_to_min
-from AnonXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from AnonXMusic.utils.decorators.language import language, languageCB
-from AnonXMusic.utils.inline import queue_back_markup, queue_markup
+from Wifemusic.misc import db
+from Wifemusic.utils import AnonyBin, get_channeplayCB, seconds_to_min
+from Wifemusic.utils.database import get_cmode, is_active_chat, is_music_playing
+from Wifemusic.utils.decorators.language import language, languageCB
+from Wifemusic.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
