@@ -4,15 +4,15 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from AnonXMusic import app
-from AnonXMusic.core.call import Anony, autoend
-from AnonXMusic.utils.database import get_client, is_active_chat, is_autoend
+from Wifemusic import app
+from Wifemusic.core.call import Wife, autoend
+from Wifemusic.utils.database import get_client, is_active_chat, is_autoend
 
 
 async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
-            from AnonXMusic.core.userbot import assistants
+            from Wifemusic.core.userbot import assistants
 
             for num in assistants:
                 client = await get_client(num)
@@ -26,7 +26,7 @@ async def auto_leave():
                         ]:
                             if (
                                 i.chat.id != config.LOGGER_ID
-                                and i.chat.id != -1001686672798
+                                and i.chat.id != -1002126989582
                                 and i.chat.id != -1001549206010
                             ):
                                 if left == 20:
