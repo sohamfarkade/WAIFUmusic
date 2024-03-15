@@ -6,7 +6,7 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from AnonXMusic import app
+from Wifemusic import app
 from Wifemusic.misc import db
 from Wifemusic.utils import AnonyBin, get_channeplayCB, seconds_to_min
 from Wifemusic.utils.database import get_cmode, is_active_chat, is_music_playing
