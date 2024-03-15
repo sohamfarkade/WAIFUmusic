@@ -191,7 +191,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         ),
                         reply_markup=close_markup(_),
                     )
-                    return await Anony.stop_stream(chat_id)
+                    return await Wife.stop_stream(chat_id)
                 except:
                     return
         else:
