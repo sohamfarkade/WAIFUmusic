@@ -51,8 +51,8 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("DevilsHeavenMF")
-                await self.one.join_chat("FallenAssociation")
+                await self.one.join_chat("channelz_k")
+                await self.one.join_chat("goku_groupz")
             except:
                 pass
             assistants.append(1)
