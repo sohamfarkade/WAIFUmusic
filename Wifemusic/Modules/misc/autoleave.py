@@ -5,7 +5,7 @@ from pyrogram.enums import ChatType
 
 import config
 from Wifemusic import app
-from Wifemusic.core.call import Wife, autoend
+from Wifemusic.core.call import Anony, autoend
 from Wifemusic.utils.database import get_client, is_active_chat, is_autoend
 
 
