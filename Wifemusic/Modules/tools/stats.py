@@ -12,7 +12,7 @@ import config
 from Wifemusic import app
 from Wifemusic.core.userbot import assistants
 from Wifemusic.misc import SUDOERS, mongodb
-from Wifemusic.plugins import ALL_MODULES
+from Wifemusic.Modules import ALL_MODULES
 from Wifemusic.utils.database import get_served_chats, get_served_users, get_sudoers
 from Wifemusic.utils.decorators.language import language, languageCB
 from Wifemusic.utils.inline.stats import back_stats_buttons, stats_buttons
