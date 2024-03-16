@@ -8,7 +8,7 @@ from youtubesearchpython.__future__ import VideosSearch
 import config
 from Wifemusic import app
 from Wifemusic.misc import _boot_
-from Wifemusic.plugins.sudo.sudoers import sudoers_list
+from Wifemusic.Modules.sudo.sudoers import sudoers_list
 from Wifemusic.utils.database import (
     add_served_chat,
     add_served_user,
