@@ -7,7 +7,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from Wifemusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from Wifemusic.core.call import Wife
+from Wifemusic.core.call import Anony
 from Wifemusic.utils import seconds_to_min, time_to_seconds
 from Wifemusic.utils.channelplay import get_channeplayCB
 from Wifemusic.utils.decorators.language import languageCB
