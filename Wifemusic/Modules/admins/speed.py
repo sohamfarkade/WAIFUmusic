@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from Wifemusic import app
-from Wifemusic.core.call import Wife
+from Wifemusic.core.call import Anony
 from Wifemusic.misc import SUDOERS, db
 from Wifemusic.utils import AdminRightsCheck
 from Wifemusic.utils.database import is_active_chat, is_nonadmin_chat
