@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from Wifemusic import YouTube, app
-from Wifemusic.core.call import Wife
+from Wifemusic.core.call import Anony
 from Wifemusic.misc import SUDOERS, db
 from Wifemusic.utils.database import (
     get_active_chats,
