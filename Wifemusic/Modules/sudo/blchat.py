@@ -4,7 +4,7 @@ from pyrogram.types import Message
 from Wifemusic import app
 from Wifemusic.misc import SUDOERS
 from Wifemusic.utils.database import blacklist_chat, blacklisted_chats, whitelist_chat
-from AnonXMusic.utils.decorators.language import language
+from Wifemusic.utils.decorators.language import language
 from config import BANNED_USERS
 
 
