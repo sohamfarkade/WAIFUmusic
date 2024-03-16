@@ -6,7 +6,7 @@ from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
 from Wifemusic import app
-from Wifemusic.core.call import Wife
+from Wifemusic.core.call import Anony
 from Wifemusic.misc import db
 from Wifemusic.utils.database import get_assistant, get_authuser_names, get_cmode
 from Wifemusic.utils.decorators import ActualAdminCB, AdminActual, language
@@ -80,7 +80,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Wife.stop_stream_force(chat_id)
+            await Anony.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
