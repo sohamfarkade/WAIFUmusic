@@ -9,7 +9,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import CommandHandler, CallbackContext, MessageHandler, filters
 
 import config
-from wifemusic import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, Wifemusic
+from Wifemusic import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, Wifemusic
 from Wifemusic import application, SUPPORT_CHAT, UPDATE_CHAT, db, LOGGER
 
 from Wifemusic import LOGGER, app as wife_app, userbot
