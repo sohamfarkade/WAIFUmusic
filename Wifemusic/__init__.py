@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Wife()
+app = Anony()
 userbot = Userbot()
 
 
