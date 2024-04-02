@@ -3,7 +3,6 @@ import os
 from pyrogram import Client 
 from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
-from .config import Development as config
 
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
@@ -16,20 +15,23 @@ logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-API_ID = config.API_ID
-API_HASH = config.API_HASH
-BOT_TOKEN = config.BOT_TOKEN
-GROUP_ID = config.GROUP_ID
-MONGO_URL = config.MONGO_URL
-VIDEO_URL = config.VIDEO_URL 
-SUPPORT_CHAT = config.SUPPORT_CHAT 
-UPDATE_CHAT = config.UPDATE_CHAT
-BOT_USERNAME = config.BOT_USERNAME 
-sudo_users = config.sudo_users
-OWNER_ID = config.OWNER_ID 
+from Sanatan.Config import Development as Config
 
-application = Application().build()
-Sanatan = Client("Sanatan", api_id=API_ID, api_hash=API_HASH, bot_token=BOT_TOKEN)
+
+API_ID= Config.API_ID
+API_HASH= Config.API_HASH
+TOKEN = Config.TOKEN
+GROUP_ID = Config.GROUP_ID
+MONGO_URL= Config.MONGO_URL
+VIDEO_URL = Config.VIDEO_URL 
+SUPPORT_CHAT = Config.SUPPORT_CHAT 
+UPDATE_CHAT = Config.UPDATE_CHAT
+BOT_USERNAME = Config.BOT_USERNAME 
+sudo_users = Config.sudo_users
+OWNER_ID = Config.OWNER_ID 
+
+application = Application.builder().token(TOKEN).build()
+Sanatan = Client("Sanatan", API_ID, API_HASH, bot_token=TOKEN)
 lol = AsyncIOMotorClient(MONGO_URL)
 db = lol['Character_catcher']
 collection = db['anime_characters_lol']
