@@ -9,14 +9,14 @@ from pyrogram import filters
 load_dotenv()
 # ------------------------------------
 # -----------------------------------------------------
-API_ID = getenv("API_ID")
-API_HASH = getenv("API_HASH")
+API_ID = getenv("API_ID","13220924")
+API_HASH = getenv("API_HASH","5542f1adb4a900f648c985a6694fc3ed")
 # ------------------------------------------------------
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("BOT_TOKEN","7167198617:AAF6pOkVfaoW4soxDFf2b8aicrKBMTrXBGU")
 # -------------------------------------------------------
 OWNER_USERNAME = getenv("OWNER_USERNAME","Zindagi_hai_tere_nal")
 # --------------------------------------------------------
-BOT_USERNAME = getenv("BOT_USERNAME")
+BOT_USERNAME = getenv("BOT_USERNAME","Husbandobot")
 # --------------------------------------------------------
 BOT_NAME = getenv("BOT_NAME")
 # ---------------------------------------------------------
@@ -26,7 +26,7 @@ ASSUSERNAME = getenv("ASSUSERNAME")
 
 #---------------------------------------------------------------
 #---------------------------------------------------------------
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI","mongodb+srv://babusona:hinatababy@cluster0.t0lfelh.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 
@@ -47,8 +47,8 @@ OWNER_ID = int(getenv("OWNER_ID", 5595153270))
 # ----------------------------------------------------------------
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 # ----------------------------------------------------------------
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-# ----------------------------------------------------------------
+HEROKU_API_KEY = getenv("HEROKU_API_KEY","3cde2df1-d960-484a-a505-c9b65fa1d7e9")
+# -------------------------------------------------------------
 # ----------------------------------------------------------------
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
