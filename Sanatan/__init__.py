@@ -15,7 +15,7 @@ logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-from @WAIFUmusic.Config import Development as Config
+from Sanatan.Config import Development as Config
 
 
 API_ID= Config.API_ID
