@@ -4,9 +4,6 @@ from pyrogram import Client
 from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
 
-**Accessing from other files**: Now, from any file within the `Sanatan` package or its sub-packages, you can import `Development` or specific variables directly:
-
-```python
 from WAIFUmusic.Sanatan import Development
 # or
 from WAIFUmusic.Sanatan import API_ID, API_HASH, BOT_TOKEN
