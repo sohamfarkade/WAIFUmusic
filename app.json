@@ -71,8 +71,7 @@
       ],
       "stack": "container"
   }
-    },
-    "addons": [
+ "addons": [
         {
             "plan": "heroku-postgresql"
         }
