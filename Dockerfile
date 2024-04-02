@@ -75,8 +75,3 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
-
-ENV PATH="/home/bot/bin:$PATH"
-
-
-CMD ["python3","-m", "Sanatan"]
