@@ -4,10 +4,6 @@ from pyrogram import Client
 from telegram.ext import Application
 from motor.motor_asyncio import AsyncIOMotorClient
 
-from WAIFUmusic.Sanatan import Development
-# or
-from WAIFUmusic.Sanatan import API_ID, API_HASH, BOT_TOKEN
-
 logging.basicConfig(
     format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
     handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
@@ -19,7 +15,7 @@ logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-from WAIFUmusic.Sanatan.Config import Development as Config
+from @WAIFUmusic.Config import Development as Config
 
 
 API_ID= Config.API_ID
