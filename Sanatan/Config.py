@@ -5,12 +5,12 @@ class Config(object):
     OWNER_ID = "5595153270"
     sudo_users = "5595153270", "6092692622"
     GROUP_ID = -1002126989582
-    TOKEN = "6419773980:AAGMy5OkpBPfJIF4_vRue32lLMso9kflQ8s"
-    MONGO_URL = "mongodb+srv://GOKU:MISSBHOPALI@goku.pzzsl8d.mongodb.net/?retryWrites=true&w=majority"
+    TOKEN = "7167198617:AAF6pOkVfaoW4soxDFf2b8aicrKBMTrXBGU"
+    MONGO_URL = "mongodb+srv://babusona:hinatababy@cluster0.t0lfelh.mongodb.net"
     VIDEO_URL = ["https://telegra.ph/file/2f56b2568b3f92abcf55e.mp4"]
     SUPPORT_CHAT = "https://t.me/goku_groupz"
     UPDATE_CHAT = "https://t.me/channelz_k"
-    BOT_USERNAME = "mycrush_robot"
+    BOT_USERNAME = "@Husbandobot"
     API_ID = 13220924
     API_HASH = "5542f1adb4a900f648c985a6694fc3ed"
     
