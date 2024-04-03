@@ -1,4 +1,8 @@
+FROM python:3.8.5-slim-buster
+
+
 FROM nikolaik/python-nodejs:python3.10-nodejs19
+
 ENV PIP_NO_CACHE_DIR 1
 RUN sed -i.bak 's/us-west-2\.ec2\.//' /etc/apt/sources.list
 
