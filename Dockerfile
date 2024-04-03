@@ -61,8 +61,7 @@ RUN apt update && apt upgrade -y && \
     libopus-dev \
     && rm -rf /var/lib/apt/lists /var/cache/apt/archives /tmp
 
-RUN pip3 install --upgrade pip setuptools
-RUN git clone https://github.com/Mynameishekhar/ptb /root/ptb    
+RUN pip3 install --upgrade pip setuptools   
 WORKDIR /root/ptb
 ENV PATH="/home/bot/bin:$PATH"
 
