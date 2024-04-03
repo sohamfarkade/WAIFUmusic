@@ -32,6 +32,21 @@
         "value": "",
         "required": true
       },
+      "BOT_USERNAME": {
+        "description": "telegram bot username here without @",
+        "value": "",
+        "required": false
+      },
+      "OWNER_USERNAME": {
+        "description": "Owner Username without @",
+        "value": "",
+        "required": false
+      },
+      "MONGO_URL": {
+        "description": "mongo db url here",
+        "value": "",
+        "required": true
+        },
       "OWNER_ID": {
         "description": "The user id of user whom you would like to add as OWNER.",
         "value": "",
