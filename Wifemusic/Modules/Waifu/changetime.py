@@ -1,6 +1,7 @@
 from pymongo import  ReturnDocument
 from pyrogram.enums import ChatMemberStatus, ChatType
-from Wifemusic import user_totals_collection, app
+from Wifemusic import app
+from Wifemusic.Modules.Waifu import 
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
