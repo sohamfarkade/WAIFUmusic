@@ -42,7 +42,7 @@ logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__) 
 
 
-application = Application.builder().token(TOKEN).build()
+application = Application.builder().token(BOT_TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
 lol = AsyncIOMotorClient(MONGO_DB_URI)
 MONGO_DB_URI = lol['Character_catcher']
