@@ -24,3 +24,44 @@ Spotify = SpotifyAPI()
 Resso = RessoAPI()
 Telegram = TeleAPI()
 YouTube = YouTubeAPI()
+import logging  
+import os
+from pyrogram import Client 
+from telegram.ext import Application
+from motor.motor_asyncio import AsyncIOMotorClient
+
+logging.basicConfig(
+    format="%(asctime)s - %(levelname)s - %(name)s - %(message)s",
+    handlers=[logging.FileHandler("log.txt"), logging.StreamHandler()],
+    level=logging.INFO,
+)
+
+logging.getLogger("apscheduler").setLevel(logging.ERROR)
+logging.getLogger('httpx').setLevel(logging.WARNING)
+logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
+LOGGER = logging.getLogger(__name__)
+
+from . import Development as config
+
+
+API_ID= config.API_ID
+API_HASH= config.API_HASH
+BOT_TOKEN = config.BOT_TOKEN
+GROUP_ID = config.GROUP_ID
+MONGO_DB_URI= config.MONGO_URL
+VIDEO_URL = config.VIDEO_URL 
+SUPPORT_CHAT = config.SUPPORT_CHAT 
+UPDATE_CHAT = config.UPDATE_CHAT
+BOT_USERNAME = config.BOT_USERNAME 
+OWNER_ID = config.OWNER_ID 
+
+application = Application.builder().token(TOKEN).build()
+Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
+lol = AsyncIOMotorClient(MONGO_DB_URI)
+MONGO_DB_URI = lol['Character_catcher']
+collection = MONGO_DB_URI['anime_characters_lol']
+user_totals_collection = MONGO_DB_URI['user_totals_lmaoooo']
+user_collection = MONGO_DB_URI["user_collection_lmaoooo"]
+group_user_totals_collection = MONGO_DB_URI['group_user_totalsssssss']
+top_global_groups_collection = MONGO_DB_URI['top_global_groups']
+pm_users = MONGO_DB_URI['total_pm_users']
