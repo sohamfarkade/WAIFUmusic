@@ -39,20 +39,8 @@ logging.basicConfig(
 logging.getLogger("apscheduler").setLevel(logging.ERROR)
 logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
-LOGGER = logging.getLogger(__name__)
+LOGGER = logging.getLogger(__name__) 
 
-
-
-API_ID= .API_ID
-API_HASH= .API_HASH
-BOT_TOKEN = .BOT_TOKEN
-GROUP_ID = .GROUP_ID
-MONGO_DB_URI= .MONGO_DB_URI
-VIDEO_URL = .VIDEO_URL 
-SUPPORT_CHAT = .SUPPORT_CHAT 
-UPDATE_CHAT = .UPDATE_CHAT
-BOT_USERNAME = .BOT_USERNAME 
-OWNER_ID = .OWNER_ID 
 
 application = Application.builder().token(TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
