@@ -43,16 +43,16 @@ LOGGER = logging.getLogger(__name__)
 
 
 
-API_ID= config.API_ID
-API_HASH= config.API_HASH
-BOT_TOKEN = config.BOT_TOKEN
-GROUP_ID = config.GROUP_ID
-MONGO_DB_URI= config.MONGO_URL
-VIDEO_URL = config.VIDEO_URL 
-SUPPORT_CHAT = config.SUPPORT_CHAT 
-UPDATE_CHAT = config.UPDATE_CHAT
-BOT_USERNAME = config.BOT_USERNAME 
-OWNER_ID = config.OWNER_ID 
+API_ID= .API_ID
+API_HASH= .API_HASH
+BOT_TOKEN = .BOT_TOKEN
+GROUP_ID = .GROUP_ID
+MONGO_DB_URI= .MONGO_DB_URI
+VIDEO_URL = .VIDEO_URL 
+SUPPORT_CHAT = .SUPPORT_CHAT 
+UPDATE_CHAT = .UPDATE_CHAT
+BOT_USERNAME = .BOT_USERNAME 
+OWNER_ID = .OWNER_ID 
 
 application = Application.builder().token(TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
