@@ -12,7 +12,7 @@ from pyrogram.types import (
 from pyrogram import Client, filters
 
 # Replace "Grabber" with your actual module name.
-from Sanatan import Sanatan
+from Wifemusic import Wifemusic
 
 ENDPOINT = "https://sasta-api.vercel.app/googleImageSearch"
 httpx_client = httpx.AsyncClient(timeout=60)
@@ -47,7 +47,7 @@ class STRINGS:
 
 response = None
 
-@Sanatan.on_message(filters.command(COMMANDS))
+@Wifemusic.on_message(filters.command(COMMANDS))
 async def on_google_lens_search(client: Client, message: Message) -> None:
     global response  # Declare response as a global variable
 
