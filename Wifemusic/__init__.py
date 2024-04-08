@@ -44,11 +44,11 @@ LOGGER = logging.getLogger(__name__)
 
 application = Application.builder().token(BOT_TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
-lol = AsyncIOMotorClient(MONGO_DB_URI)
-MONGO_DB_URI = lol['Character_catcher']
-collection = MONGO_DB_URI['anime_characters_lol']
-user_totals_collection = MONGO_DB_URI['user_totals_lmaoooo']
-user_collection = MONGO_DB_URI["user_collection_lmaoooo"]
-group_user_totals_collection = MONGO_DB_URI['group_user_totalsssssss']
-top_global_groups_collection = MONGO_DB_URI['top_global_groups']
-pm_users = MONGO_DB_URI['total_pm_users']
+lol = AsyncIOMotorClient(MONGO_URL)
+db = lol['Character_catcher']
+collection = db['anime_characters_lol']
+user_totals_collection = db['user_totals_lmaoooo']
+user_collection = db["user_collection_lmaoooo"]
+group_user_totals_collection = db['group_user_totalsssssss']
+top_global_groups_collection = db['top_global_groups']
+pm_users = db['total_pm_users']
