@@ -43,17 +43,15 @@ LOGGER = logging.getLogger(__name__)
 
 from config import *
 
-
+BOT_USERNAME
 API_ID
 API_HASH
 BOT_TOKEN
-GROUP_ID
-MONGO_URL
-VIDEO_URL
-SUPPORT_CHAT 
-UPDATE_CHAT
-BOT_USERNAME
+MONGO_DB_URI
+LOGGER_ID
 OWNER_ID
+SUPPORT_CHAT
+SUPPORT_CHANNEL
 
 
 application = Application.builder().token(BOT_TOKEN).build()
