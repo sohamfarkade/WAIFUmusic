@@ -37,8 +37,8 @@ LOGGER = logging.getLogger(__name__)
 from config import *
 
 
-API_ID= .API_ID
-API_HASH= .API_HASH
+API_ID = .API_ID
+API_HASH = .API_HASH
 TOKEN = .TOKEN
 GROUP_ID = .GROUP_ID
 MONGO_URL= .MONGO_URL
