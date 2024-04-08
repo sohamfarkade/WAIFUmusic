@@ -8,17 +8,17 @@ from telegram import Update, InlineQueryResultPhoto
 from telegram.ext import InlineQueryHandler, CallbackContext, CommandHandler 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from . import user_collection, collection, application, MONGO_DB_URI
+from Wifemusic.__inti__ import user_collection, collection, application, db
 
 # collection
-MONGO_DB_URI.characters.create_index([('id', ASCENDING)])
-MONGO_DB_URI.characters.create_index([('anime', ASCENDING)])
-MONGO_DB_URI.characters.create_index([('img_url', ASCENDING)])
+db.characters.create_index([('id', ASCENDING)])
+db.characters.create_index([('anime', ASCENDING)])
+db.characters.create_index([('img_url', ASCENDING)])
 
 # user_collection
-MONGO_DB_URI.user_collection.create_index([('characters.id', ASCENDING)])
-MONGO_DB_URI.user_collection.create_index([('characters.name', ASCENDING)])
-MONGO_DB_URI.user_collection.create_index([('characters.img_url', ASCENDING)])
+db.user_collection.create_index([('characters.id', ASCENDING)])
+db.user_collection.create_index([('characters.name', ASCENDING)])
+db.user_collection.create_index([('characters.img_url', ASCENDING)])
 
 all_characters_cache = TTLCache(maxsize=10000, ttl=36000)
 user_collection_cache = TTLCache(maxsize=10000, ttl=60)
