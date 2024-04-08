@@ -44,10 +44,15 @@ LOGGER = logging.getLogger(__name__)
 from config import *
 
 
-
 API_ID
 API_HASH
-SUPPORT_CHAT
+BOT_TOKEN
+GROUP_ID
+MONGO_URL
+VIDEO_URL
+SUPPORT_CHAT 
+UPDATE_CHAT
+BOT_USERNAME
 OWNER_ID
 
 
