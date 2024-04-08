@@ -36,17 +36,7 @@ LOGGER = logging.getLogger(__name__)
 
 from config import *
 
-
-API_ID = .API_ID
-API_HASH = .API_HASH
-TOKEN = .TOKEN
-GROUP_ID = .GROUP_ID
-MONGO_URL= .MONGO_URL
-VIDEO_URL = .VIDEO_URL 
-SUPPORT_CHAT = .SUPPORT_CHAT 
-UPDATE_CHAT = .UPDATE_CHAT
-BOT_USERNAME = .BOT_USERNAME
-OWNER_ID = .OWNER_ID 
+ 
 
 application = Application.builder().token(BOT_TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
