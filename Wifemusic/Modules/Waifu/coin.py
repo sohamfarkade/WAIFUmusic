@@ -13,8 +13,8 @@ from telegram.ext import CommandHandler, CallbackContext, CallbackQueryHandler
 from datetime import datetime, timedelta
 
 # Assuming these are defined elsewhere in your code
-from . import MONGO_DB_URI, UPDATE_CHAT, SUPPORT_CHAT, collection, OWNER_ID
-from Sanatan import (application, VIDEO_URL, user_collection,
+from Wifemusic.__init__ import MONGO_DB_URI, UPDATE_CHAT, SUPPORT_CHAT, collection, OWNER_ID
+from Wifemusic.__init__ import (application, user_collection,
                     user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
