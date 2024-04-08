@@ -43,7 +43,13 @@ LOGGER = logging.getLogger(__name__)
 
 from config import *
 
- 
+
+
+API_ID
+API_HASH
+SUPPORT_CHAT
+OWNER_ID
+
 
 application = Application.builder().token(BOT_TOKEN).build()
 Wifemusic = Client("wifemusic", API_ID, API_HASH, bot_token=BOT_TOKEN)
