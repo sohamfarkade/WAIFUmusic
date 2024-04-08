@@ -4,7 +4,7 @@ from pymongo import ReturnDocument
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext
 
-from . import application, collection, MONGO_DB_URI, UPDATE_CHAT, SUPPORT_CHAT
+from Wifemusic.__init__ import application, collection, db, SUPPORT_CHANNEL, SUPPORT_CHAT
 from Wifemusic.misc import SUDOERS
 
 WRONG_FORMAT_TEXT = """Wrong ❌ format...  eg. /upload Img_url muzan-kibutsuji Demon-slayer 3
@@ -18,7 +18,7 @@ rarity_map = 1 (⚪️ Common), 2 (🟣 Rare) , 3 (🟡 Legendary), 4 (🟢 Medi
 
 
 async def get_next_sequence_number(sequence_name):
-    sequence_collection = MONGO_DB_URI.sequences
+    sequence_collection = db.sequences
     sequence_document = await sequence_collection.find_one_and_update(
         {'_id': sequence_name}, 
         {'$inc': {'sequence_value': 1}}, 
