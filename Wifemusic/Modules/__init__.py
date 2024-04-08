@@ -34,7 +34,7 @@ logging.getLogger('httpx').setLevel(logging.WARNING)
 logging.getLogger("pyrate_limiter").setLevel(logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-from . import Development as *
+from config import *
 
 
 API_ID= .API_ID
