@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Wifemusic.__init__ import user_collection, wifemusic
+from Wifemusic.__init__ import user_collection, Wifemusic
 
 pending_trades = {}
 
 
-@wifemusic.on_message(filters.command("trade"))
+@Wifemusic.on_message(filters.command("trade"))
 async def trade(client, message):
     sender_id = message.from_user.id
 
