@@ -18,7 +18,7 @@ from Wifemusic.__init__ import (application, user_collection,
                     user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
-shops_collection = MONGO_DB_URI["shops"]
+shops_collection = db["shops"]
 # Owner ID
 OWNER_ID = "5595153270"
 
