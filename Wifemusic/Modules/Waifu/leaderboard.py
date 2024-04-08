@@ -5,8 +5,8 @@ import html
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext
 
-from . import OWNER_ID
-from Wifemusic import (application, user_collection, top_global_groups_collection, top_global_groups_collection, 
+from Wifemusic.__init__ import OWNER_ID
+from Wifemusic.__init__ import (application, user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
 from Wifemusic.misc import SUDOERS
