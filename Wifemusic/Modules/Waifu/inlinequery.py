@@ -8,7 +8,7 @@ from telegram import Update, InlineQueryResultPhoto
 from telegram.ext import InlineQueryHandler, CallbackContext, CommandHandler 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
 
-from Wifemusic.__inti__ import user_collection, collection, application, db
+from Wifemusic.__init__ import user_collection, collection, application, db
 
 # collection
 db.characters.create_index([('id', ASCENDING)])
