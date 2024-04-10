@@ -10,7 +10,7 @@ from telegram import InlineKeyboardMarkup, InlineKeyboardButton
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext, MessageHandler, filters
 
-from Wifemusic.__init__ import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, Sanatan
+from Wifemusic.__init__ import collection, top_global_groups_collection, group_user_totals_collection, user_collection, user_totals_collection, Wifemusic
 from Wifemusic.__init__ import application, SUPPORT_CHAT, SUPPORT_CHANNEL, db, LOGGER
 from Wifemusic.Modules import ALL_MODULES
 
@@ -25,7 +25,7 @@ message_counts = {}
 
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module(Wifemusic.Modules." + module_name)
+    imported_module = importlib.import_module("Wifemusic.Modules." + module_name)
 
 
 last_user = {}
