@@ -8,7 +8,7 @@ import config
 from Wifemusic import LOGGER, app, userbot
 from Wifemusic.core.call import Anony
 from Wifemusic.misc import sudo
-from Wifemusic.Modules import *
+from Wifemusic.Modules import ALL_MODULES
 from Wifemusic.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
@@ -34,7 +34,7 @@ async def init():
     except:
         pass
     await app.start()
-    for all_module in ALL_MODULE:
+    for all_module in ALL_MODULES:
         importlib.import_module("Wifemusic.Modules" + all_module)
     LOGGER("Wifemusic.Modules").info("Successfully Imported Modules...")
     await userbot.start()
