@@ -9,7 +9,7 @@ import config
 from Wifemusic import app, userbot
 from Wifemusic.core.call import Anony
 from Wifemusic.misc import sudo
-from Wifemusic.Modules import ALL_MODULES
+from Wifemusic.Modules import *
 from Wifemusic.utils.database import get_banned_users, get_gbanned
 
 locks = {}
