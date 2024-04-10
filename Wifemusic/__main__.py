@@ -34,7 +34,7 @@ async def init():
     except:
         pass
     await app.start()
-    for all_module in module_name:
+    for all_module in ALL_MODULE:
         importlib.import_module("Wifemusic.Modules" + all_module)
     LOGGER("Wifemusic.Modules").info("Successfully Imported Modules...")
     await userbot.start()
