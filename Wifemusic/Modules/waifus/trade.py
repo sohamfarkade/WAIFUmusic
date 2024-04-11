@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Wifemusic. __init__ import user_collection, Wifemusic
+from Wifemusic.__init__ import user_collection, Wifemusic
 
 pending_trades = {}
 
