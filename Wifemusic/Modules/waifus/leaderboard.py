@@ -5,11 +5,11 @@ import html
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext
 
-from Sanatan import (application, VIDEO_URL, OWNER_ID,
+from Wifemusic.__init__ import (application, OWNER_ID,
                     user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
-from Sanatan import sudo_users as SUDO_USERS 
+from Wifemusic.Modules.misc import SUDOERS
 
     
 async def global_leaderboard(update: Update, context: CallbackContext) -> None:
@@ -109,8 +109,8 @@ async def stats(update: Update, context: CallbackContext) -> None:
 
 
 async def send_users_document(update: Update, context: CallbackContext) -> None:
-    if str(update.effective_user.id) not in SUDO_USERS:
-        update.message.reply_text('only For Sudo users...')
+    if str(update.effective_user.id) not in SUDOERS:
+        update.message.reply_text('oor Sudo users...')
         return
     cursor = user_collection.find({})
     users = []
@@ -126,7 +126,7 @@ async def send_users_document(update: Update, context: CallbackContext) -> None:
     os.remove('users.txt')
 
 async def send_groups_document(update: Update, context: CallbackContext) -> None:
-    if str(update.effective_user.id) not in SUDO_USERS:
+    if str(update.effective_user.id) not in SUDOERS:
         update.message.reply_text('Only For Sudo users...')
         return
     cursor = top_global_groups_collection.find({})
