@@ -114,13 +114,13 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION2", "BQGrPU8AdxQQ8-AxImqws4ipOXzAAkD2xVaCQeya0BfAfgnyNm6A4GxzSDAqnu9TR2fSzXSfSyLhXexd9fqJ19qV7ZrMN7lKFlNOcfLl3fSE-Xmk9xW5aiEbgtR75d_rzLVgmZVC4h5rCcyjUw1Ys3T99BZ9IOSG5b60B6ks5VHJtoP65asAcqubTAlnENHI-FrpsUhXne_ULrlkS02U3p69V6-8_Aleu6KCwPGQXD4hlGp_coXINJQ0jvPIDvUSxvPMra5FpMpAQmnOKsXzKsL5ey97VTB8b0RWqjN5h9TUBD6FKjhbr3CWDnaftL5ShhH9toksixb5OjjuXcg_MbV7DmFMFgAAAAFtzc3-AA")
-STRING2 = getenv("STRING_SESSION2", None)
-STRING3 = getenv("STRING_SESSION3", None)
-STRING4 = getenv("STRING_SESSION4", None)
-STRING5 = getenv("STRING_SESSION5", None)
-STRING6 = getenv("STRING_SESSION6", None)
-STRING7 = getenv("STRING_SESSION7", None)
+STRING1 = getenv("STRING_SESSION")
+STRING2 = getenv("STRING_SESSION2")
+STRING3 = getenv("STRING_SESSION3")
+STRING4 = getenv("STRING_SESSION4")
+STRING5 = getenv("STRING_SESSION5")
+STRING6 = getenv("STRING_SESSION6")
+STRING7 = getenv("STRING_SESSION7")
 BANNED_USERS = filters.user()
 adminlist = {}
 lyrical = {}
