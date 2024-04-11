@@ -4,7 +4,7 @@ from pymongo import ReturnDocument
 from telegram import Update
 from telegram.ext import CommandHandler, CallbackContext
 
-from Wifemusic.__init__ import application,, collection, db, SUPPORT_CHANNEL, SUPPORT_CHAT
+from Wifemusic.__init__ import application, collection, db, SUPPORT_CHANNEL, SUPPORT_CHAT
 from Wifemusic.misc import SUDOERS
 
 WRONG_FORMAT_TEXT = """Wrong ❌ format...  eg. /upload Img_url muzan-kibutsuji Demon-slayer 3
