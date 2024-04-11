@@ -9,7 +9,7 @@ from Wifemusic.__init__ import (application, OWNER_ID,
                     user_collection, top_global_groups_collection, top_global_groups_collection, 
                     group_user_totals_collection)
 
-from Wifemusic.Modules.misc import SUDOERS
+from Wifemusic.misc import SUDOERS
 
     
 async def global_leaderboard(update: Update, context: CallbackContext) -> None:
