@@ -35,7 +35,7 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("Wifemusic.Modules" + all_module)
+        importlib.import_module("Wifemusic.Modules" + all_modules)
     LOGGER.info("Successfully Imported Modules...")
     await userbot.start()
     await Anony.start()
@@ -89,7 +89,7 @@ message_counts = {}
 
 
 for module_name in ALL_MODULES:
-    imported_module = importlib.import_module("Wifemusic.Modules" + module_name)
+    imported_module = importlib.import_module("Wifemusic.Modules" + ALL_MODULES)
 
 
 last_user = {}
