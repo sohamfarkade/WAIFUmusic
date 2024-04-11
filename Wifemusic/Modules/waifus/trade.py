@@ -1,12 +1,12 @@
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton
 
-from Sanatan import user_collection, Sanatan
+from Wifemusic. __init__ import user_collection, Wifemusic
 
 pending_trades = {}
 
 
-@Sanatan.on_message(filters.command("trade"))
+@Wifemusic.on_message(filters.command("trade"))
 async def trade(client, message):
     sender_id = message.from_user.id
 
@@ -65,7 +65,7 @@ async def trade(client, message):
     await message.reply_text(f"{message.reply_to_message.from_user.mention}, do you accept this trade?", reply_markup=keyboard)
 
 
-@Sanatan.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_trade", "cancel_trade"]))
+@Wifemusic.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_trade", "cancel_trade"]))
 async def on_callback_query(client, callback_query):
     receiver_id = callback_query.from_user.id
 
@@ -119,7 +119,7 @@ async def on_callback_query(client, callback_query):
 pending_gifts = {}
 
 
-@Sanatan.on_message(filters.command("gift"))
+@Wifemusic.on_message(filters.command("gift"))
 async def gift(client, message):
     sender_id = message.from_user.id
 
@@ -166,7 +166,7 @@ async def gift(client, message):
 
     await message.reply_text(f"do You Really Wanns To Gift {message.reply_to_message.from_user.mention} ?", reply_markup=keyboard)
 
-@Sanatan.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_gift", "cancel_gift"]))
+@Wifemusic.on_callback_query(filters.create(lambda _, __, query: query.data in ["confirm_gift", "cancel_gift"]))
 async def on_callback_query(client, callback_query):
     sender_id = callback_query.from_user.id
 
