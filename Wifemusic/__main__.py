@@ -3,6 +3,24 @@ import time
 import random
 import re
 import asyncio
+
+async def markup_timer():
+    # Your markup_timer logic here
+
+async def main():
+    # Start the markup timer coroutine
+    await markup_timer()
+
+if __name__ == "__main__":
+    # Create and run the asyncio event loop
+    loop = asyncio.get_event_loop()
+    try:
+        loop.run_until_complete(main())
+    except KeyboardInterrupt:
+        pass
+    finally:
+        loop.close()
+
 from html import escape 
 
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup
