@@ -1,13 +1,13 @@
 from pymongo import  ReturnDocument
 from pyrogram.enums import ChatMemberStatus, ChatType
-from Sanatan import user_totals_collection, Sanatan
+from Wifemusic.__init__ import user_totals_collection, Wifemusic
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
 ADMINS = [ChatMemberStatus.ADMINISTRATOR, ChatMemberStatus.OWNER]
 
 
-@Sanatan.on_message(filters.command("changetime"))
+@Wifemusic.on_message(filters.command("changetime"))
 async def change_time(client: Client, message: Message):
     
     user_id = message.from_user.id
