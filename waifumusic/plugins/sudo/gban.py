@@ -4,10 +4,10 @@ from pyrogram import filters
 from pyrogram.errors import FloodWait
 from pyrogram.types import Message
 
-from AnonXMusic import app
-from AnonXMusic.misc import SUDOERS
-from AnonXMusic.utils import get_readable_time
-from AnonXMusic.utils.database import (
+from waifumusic import app
+from waifumusic.misc import SUDOERS
+from waifumusic.utils import get_readable_time
+from waifumusic.utils.database import (
     add_banned_user,
     get_banned_count,
     get_banned_users,
@@ -15,8 +15,8 @@ from AnonXMusic.utils.database import (
     is_banned_user,
     remove_banned_user,
 )
-from AnonXMusic.utils.decorators.language import language
-from AnonXMusic.utils.extraction import extract_user
+from waifumusic.utils.decorators.language import language
+from waifumusic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
