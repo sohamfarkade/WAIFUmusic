@@ -1,7 +1,7 @@
 from pyrogram.enums import ParseMode
 
-from AnonXMusic import app
-from AnonXMusic.utils.database import is_on_off
+from waifumusic import app
+from waifumusic.utils.database import is_on_off
 from config import LOGGER_ID
 
 
