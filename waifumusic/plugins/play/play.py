@@ -6,22 +6,22 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from AnonXMusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.utils import seconds_to_min, time_to_seconds
-from AnonXMusic.utils.channelplay import get_channeplayCB
-from AnonXMusic.utils.decorators.language import languageCB
-from AnonXMusic.utils.decorators.play import PlayWrapper
-from AnonXMusic.utils.formatters import formats
-from AnonXMusic.utils.inline import (
+from waifumusic import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from waifumusic.core.call import waifu
+from waifumusic.utils import seconds_to_min, time_to_seconds
+from waifumusic.utils.channelplay import get_channeplayCB
+from waifumusic.utils.decorators.language import languageCB
+from waifumusic.utils.decorators.play import PlayWrapper
+from waifumusic.utils.formatters import formats
+from waifumusic.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from AnonXMusic.utils.logger import play_logs
-from AnonXMusic.utils.stream.stream import stream
+from waifumusic.utils.logger import play_logs
+from waifumusic.utils.stream.stream import stream
 from config import BANNED_USERS, lyrical
 
 
@@ -288,7 +288,7 @@ async def play_commnd(
             return await mystic.delete()
         else:
             try:
-                await Anony.stream_call(url)
+                await waifu.stream_call(url)
             except NoActiveGroupCall:
                 await mystic.edit_text(_["black_9"])
                 return await app.send_message(
