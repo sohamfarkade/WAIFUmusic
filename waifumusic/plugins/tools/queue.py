@@ -6,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from AnonXMusic import app
-from AnonXMusic.misc import db
-from AnonXMusic.utils import AnonyBin, get_channeplayCB, seconds_to_min
-from AnonXMusic.utils.database import get_cmode, is_active_chat, is_music_playing
-from AnonXMusic.utils.decorators.language import language, languageCB
-from AnonXMusic.utils.inline import queue_back_markup, queue_markup
+from waifumusic import app
+from waifumusic.misc import db
+from waifumusic.utils import waifuBin, get_channeplayCB, seconds_to_min
+from waifumusic.utils.database import get_cmode, is_active_chat, is_music_playing
+from waifumusic.utils.decorators.language import language, languageCB
+from waifumusic.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
@@ -176,7 +176,7 @@ async def queued_tracks(client, CallbackQuery: CallbackQuery, _):
             return await CallbackQuery.edit_message_text(msg, reply_markup=buttons)
         if "✨" in msg:
             msg = msg.replace("✨", "")
-        link = await AnonyBin(msg)
+        link = await waifuBin(msg)
         med = InputMediaPhoto(media=link, caption=_["queue_3"].format(link))
         await CallbackQuery.edit_message_media(media=med, reply_markup=buttons)
     else:
