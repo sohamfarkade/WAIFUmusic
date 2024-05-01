@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from waifumusic import YouTube, app
-from waifumusic.core.call import Anony
+from waifumusic.core.call import waifu
 from waifumusic.misc import db
 from waifumusic.utils import AdminRightsCheck, seconds_to_min
 from waifumusic.utils.inline import close_markup
