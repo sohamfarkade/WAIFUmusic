@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from waifumusic import YouTube, app
-from waifumusic.core.call import Anony
+from waifumusic.core.call import waifu
 from waifumusic.misc import db
 from waifumusic.utils.database import get_loop
 from waifumusic.utils.decorators import AdminRightsCheck
