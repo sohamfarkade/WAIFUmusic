@@ -5,12 +5,12 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.types import CallbackQuery, Message
 
-from AnonXMusic import app
-from AnonXMusic.core.call import Anony
-from AnonXMusic.misc import db
-from AnonXMusic.utils.database import get_assistant, get_authuser_names, get_cmode
-from AnonXMusic.utils.decorators import ActualAdminCB, AdminActual, language
-from AnonXMusic.utils.formatters import alpha_to_int, get_readable_time
+from waifumusic import app
+from waifumusic.core.call import waifu
+from waifumusic.misc import db
+from waifumusic.utils.database import get_assistant, get_authuser_names, get_cmode
+from waifumusic.utils.decorators import ActualAdminCB, AdminActual, language
+from waifumusic.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 
 rel = {}
@@ -80,7 +80,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await Anony.stop_stream_force(chat_id)
+            await waifu.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
