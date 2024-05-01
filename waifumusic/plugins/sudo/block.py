@@ -5,7 +5,7 @@ from waifumusic import app
 from waifumusic.misc import SUDOERS
 from waifumusic.utils.database import add_gban_user, remove_gban_user
 from waifumusic.utils.decorators.language import language
-from waifumusicusic.utils.extraction import extract_user
+from waifumusic.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
