@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from waifumusic import YouTube, app
-from waifumusic.core.call import Anony
+from waifumusic.core.call import waifu
 from waifumusic.misc import SUDOERS, db
 from waifumusic.utils.database import (
     get_active_chats,
