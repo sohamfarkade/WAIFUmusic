@@ -1,8 +1,8 @@
-from AnonXMusic.core.bot import Anony
-from AnonXMusic.core.dir import dirr
-from AnonXMusic.core.git import git
-from AnonXMusic.core.userbot import Userbot
-from AnonXMusic.misc import dbb, heroku
+from waifumusic.core.bot import waifu
+from waifumusic.core.dir import dirr
+from waifumusic.core.git import git
+from waifumusic.core.userbot import Userbot
+from waifumusic.misc import dbb, heroku
 
 from .logging import LOGGER
 
@@ -11,7 +11,7 @@ git()
 dbb()
 heroku()
 
-app = Anony()
+app = waifu()
 userbot = Userbot()
 
 
