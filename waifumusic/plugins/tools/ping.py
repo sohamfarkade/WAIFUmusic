@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from waifumusic import app
-from waifumusic.core.call import Anony
+from waifumusic.core.call import waifu
 from waifumusic.utils import bot_sys_stats
 from waifumusic.utils.decorators.language import language
 from waifumusic.utils.inline import supp_markup
