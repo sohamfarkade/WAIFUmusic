@@ -1,16 +1,16 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from AnonXMusic import app
-from AnonXMusic.utils import extract_user, int_to_alpha
-from AnonXMusic.utils.database import (
+from waifumusic import app
+from waifumusic.utils import extract_user, int_to_alpha
+from waifumusic.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from AnonXMusic.utils.decorators import AdminActual, language
-from AnonXMusic.utils.inline import close_markup
+from waifumusic.utils.decorators import AdminActual, language
+from waifumusic.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
