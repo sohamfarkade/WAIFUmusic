@@ -114,7 +114,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", "5242880000"))
 # ------------------------------------
 # ------------------------------------
 # ------------------------------------
-STRING1 = getenv("STRING_SESSION")
+STRING1 = getenv("STRING_SESSION","BQGMX-gAxh2w8c8OVjNcnjEkt7QYpX178PmRps_NL80fZ8x7VP0RbOke1tuKm9laiBkAHhSqN4RdHEBzHhI5FIZmtcqM39h6tGKyEC97lb-gC_GGbdtnwKoEkFgSoAJh_dr8qRsqN7WDI5KP4iSBtGq7MEBpi55wH1szkSyZulkXGpbbf-LLVTr1v8v4j60zA4Man3TaZSErGO9iKHDASS0B68IJAauAxkOyZvVnWDoVXbbJl4QU0mSMVg8KfB_zCYKYdjtcc3DjiDg9RPW2FHmg3V-RbQSLinlgIZ48kFtpq2t0MnuMb765w9mVzo6UCNsQ6xG852BigU7SwPvCQq7koO-n_AAAAAGqCdcqAA")
 STRING2 = getenv("STRING_SESSION2")
 STRING3 = getenv("STRING_SESSION3")
 STRING4 = getenv("STRING_SESSION4")
